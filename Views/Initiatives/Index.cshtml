@@ -1,0 +1,23 @@
+@model IEnumerable<VolunteerInitiativesSystem.Models.Initiative>
+
+<h2>Initiatives</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Coordinator</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.Category</td>
+                <td>@item.Coordinator.FirstName @item.Coordinator.LastName</td>
+            </tr>
+        }
+    </tbody>
+</table>

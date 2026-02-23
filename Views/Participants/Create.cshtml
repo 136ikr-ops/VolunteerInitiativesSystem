@@ -1,0 +1,22 @@
+@model VolunteerInitiativesSystem.Models.Participant
+
+@{
+    ViewData["Title"] = "Create Participant";
+}
+
+<h2>Create Participant</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" class="form-control" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-success">Save</button>
+</form>
+
+<a asp-action="Index">Back to List</a>
