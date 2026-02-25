@@ -134,3 +134,4 @@ C:\Users\35989\OneDrive\Работен плот\Нова папка\VolunteerIni
 C:\Users\35989\OneDrive\Работен плот\Нова папка\VolunteerInitiativesSystem\obj\Debug\net8.0\VolunteerInitiativesSystem.pdb
 C:\Users\35989\OneDrive\Работен плот\Нова папка\VolunteerInitiativesSystem\obj\Debug\net8.0\VolunteerInitiativesSystem.genruntimeconfig.cache
 C:\Users\35989\OneDrive\Работен плот\Нова папка\VolunteerInitiativesSystem\obj\Debug\net8.0\ref\VolunteerInitiativesSystem.dll
+C:\Users\35989\OneDrive\Работен плот\Нова папка\VolunteerInitiativesSystem\obj\Debug\net8.0\VolunteerInitiativesSystem.sourcelink.json

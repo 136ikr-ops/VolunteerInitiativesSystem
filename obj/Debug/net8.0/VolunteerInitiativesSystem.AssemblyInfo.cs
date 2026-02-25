@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VolunteerInitiativesSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0be731f4ae42941aabf67fb89c93e445fc0188c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("VolunteerInitiativesSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VolunteerInitiativesSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

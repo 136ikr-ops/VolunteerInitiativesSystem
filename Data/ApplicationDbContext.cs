@@ -17,10 +17,10 @@ namespace VolunteerInitiativesSystem.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<InitiativeParticipant>()
                 .HasKey(ip => new { ip.InitiativeId, ip.ParticipantId });
-
-            base.OnModelCreating(modelBuilder);
         }
     }
 }

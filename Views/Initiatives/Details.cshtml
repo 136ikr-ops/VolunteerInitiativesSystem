@@ -1,0 +1,26 @@
+@model VolunteerInitiativesSystem.Models.Initiative
+
+<h2>@Model.Title</h2>
+
+<p><strong>Категория:</strong> @Model.Category</p>
+<p><strong>Описание:</strong> @Model.Description</p>
+<p><strong>Дата:</strong> @Model.Date.ToShortDateString()</p>
+<p><strong>Координатор:</strong> @Model.Coordinator.FirstName @Model.Coordinator.LastName</p>
+
+<h3>Записани участници (@Model.Registrations.Count / @Model.MaxParticipants)</h3>
+
+@if (!Model.Registrations.Any())
+{
+    <p>Няма записани участници.</p>
+}
+else
+{
+    <ul>
+        @foreach (var reg in Model.Registrations)
+        {
+            <li>
+                @reg.Participant.FirstName @reg.Participant.LastName
+            </li>
+        }
+    </ul>
+}

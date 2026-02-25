@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace VolunteerInitiativesSystem.Models
@@ -7,19 +9,24 @@ namespace VolunteerInitiativesSystem.Models
         public int Id { get; set; }
 
         [Required]
-        public string Title { get; set; }
+        public string Title { get; set; } = string.Empty;
 
-        public string Description { get; set; }
+        public string Description { get; set; } = string.Empty;
 
+        [Required]
+        public string Category { get; set; } = string.Empty;   // 🔥 ДОБАВИХМЕ
+
+        [Required]
         public DateTime Date { get; set; }
 
-        public string Category { get; set; }
+        public int MaxParticipants { get; set; }
 
-        // Връзка към координатор
+        // Foreign key
         public int CoordinatorId { get; set; }
-        public Coordinator Coordinator { get; set; }
+        public Coordinator Coordinator { get; set; } = null!;
 
-        // Много към много
-        public ICollection<InitiativeParticipant> InitiativeParticipants { get; set; }
+        // MANY-TO-MANY
+        public ICollection<InitiativeParticipant> Registrations { get; set; } 
+            = new List<InitiativeParticipant>();
     }
 }

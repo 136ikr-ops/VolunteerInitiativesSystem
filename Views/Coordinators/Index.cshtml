@@ -1,0 +1,25 @@
+@model IEnumerable<VolunteerInitiativesSystem.Models.Coordinator>
+
+<h2>Coordinators</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create">Добави координатор</a>

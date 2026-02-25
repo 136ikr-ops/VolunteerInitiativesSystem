@@ -8,6 +8,7 @@
             <th>Title</th>
             <th>Category</th>
             <th>Coordinator</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -17,6 +18,11 @@
                 <td>@item.Title</td>
                 <td>@item.Category</td>
                 <td>@item.Coordinator.FirstName @item.Coordinator.LastName</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">
+                        Детайли
+                    </a>
+                </td>
             </tr>
         }
     </tbody>

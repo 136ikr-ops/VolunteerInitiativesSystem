@@ -17,6 +17,6 @@ namespace VolunteerInitiativesSystem.Models
         [EmailAddress]
         public string Email { get; set; }
 
-        public ICollection<Initiative> Initiatives { get; set; }
+        public ICollection<Initiative> Initiatives { get; set; } = new List<Initiative>();
     }
 }

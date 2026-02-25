@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace VolunteerInitiativesSystem.Models
@@ -9,5 +10,7 @@ namespace VolunteerInitiativesSystem.Models
 
         public int ParticipantId { get; set; }
         public Participant Participant { get; set; }
+
+        public DateTime RegisteredOn { get; set; } = DateTime.Now;
     }
 }
